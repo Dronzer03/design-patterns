@@ -1,14 +1,14 @@
 public abstract class BeverageTemplate {
-    public void addWater() {
+    private void addWater() {
         System.out.println("Adding water");
     }
-    public abstract void addMilk();
-    public abstract void addSugar();
-    public abstract void addBeverageContent();
-    public void boil() {
+    protected abstract void addMilk();
+    protected abstract void addSugar();
+    protected abstract void addBeverageContent();
+    private void boil() {
         System.out.println("Boiling the Beverage");
     }
-    public void serve() {
+    private void serve() {
         System.out.println("Serve the beverage!");
     }
 

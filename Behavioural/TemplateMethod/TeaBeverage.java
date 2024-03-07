@@ -1,16 +1,17 @@
-public class TeaBeverage extends BeverageTemplate{
+public class TeaBeverage extends BeverageTemplate {
+
     @Override
-    public void addMilk() {
-        System.out.println("Add Half glass milk");
+    protected void addMilk() {
+        System.out.println("Add Half Glass Milk");
     }
 
     @Override
-    public void addSugar() {
+    protected void addSugar() {
         System.out.println("Add 2 Teaspoon Sugar");
     }
 
     @Override
-    public void addBeverageContent() {
+    protected void addBeverageContent() {
         System.out.println("Add Tea");
     }
 }
